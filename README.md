@@ -4,7 +4,7 @@ pix2sky
 Python routine to convert CCD pixel coordinates to sky coordinates (RA/DEC) on multicore machines.
 
 - Author:       Navtej Singh
-- Contact:      n.saini1@nuigalway.ie
+- Contact:      reachnavtej@gmail.com
 - Web Site:     http://astro.nuigalway.ie/staff/navtejs
 - Organization: CfA@NUIG <http://astro.nuigalway.ie>
 
