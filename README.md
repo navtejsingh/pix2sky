@@ -8,6 +8,8 @@ Python routine to convert CCD pixel coordinates to sky coordinates (RA/DEC) on m
 - Web Site:     http://astro.nuigalway.ie/staff/navtejs
 - Organization: CfA@NUIG <http://astro.nuigalway.ie>
 
+This routine was coded as part of research paper "Parallel astronomical data processing with Python: Recipes for multicore machines", published in Astronomy and Computing. Astro-ph link: http://arxiv.org/abs/1306.0573.
+
 Thank you for downloading pix2sky code. It includes three different versions of the same code - pix2sky_serial.py for running code in serial mode, pix2sky_multi.py for running on multicore/multiprocessor machines and pix2sky_pp.py uses external parallel python library.
 
 
