@@ -29,15 +29,15 @@ Thank you for downloading pix2sky code. It includes three different versions of 
 - Execute the following commands to run the code
 
     + Serial Mode: 
-              $python pix2sky_serial.py data/in.fits data/in_xy.cat
-              $python pix2sky_serial.py data/in.fits data/in_xy.cat -d no  
+              $python pix2sky_serial.py in.fits in_xy.cat
+              $python pix2sky_serial.py in.fits in_xy.cat -d no  
 
     + Multicore Mode: 
-              $python pix2sky_multi.py data/in.fits data/in_xy.cat
-              $python pix2sky_multi.py data/in.fits data/in_xy.cat -d no
+              $python pix2sky_multi.py in.fits in_xy.cat
+              $python pix2sky_multi.py in.fits in_xy.cat -d no
 
-              $python pix2sky_pp.py data/in.fits data/in_xy.cat         
-              $python pix2sky_pp.py data/in.fits data/in_xy.cat -d no
+              $python pix2sky_pp.py in.fits in_xy.cat         
+              $python pix2sky_pp.py in.fits in_xy.cat -d no
     
 - For available command line options:
 
