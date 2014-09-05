@@ -10,7 +10,7 @@ Python routine to convert CCD pixel coordinates to sky coordinates (RA/DEC) on m
 
 This routine was coded as part of research paper "Parallel astronomical data processing with Python: Recipes for multicore machines", published in Astronomy and Computing. Astro-ph link: http://arxiv.org/abs/1306.0573.
 
-Thank you for downloading pix2sky code. It includes three different versions of the same code - pix2sky_serial.py for running code in serial mode, pix2sky_multi.py for running on multicore/multiprocessor machines and pix2sky_pp.py uses external parallel python library.
+Thank you for downloading pix2sky code. It includes four different versions of the same code - pix2sky_serial.py for running code in serial mode, pix2sky_multi.py for running on multicore/multiprocessor machines, pix2sky_pp.py uses external parallel python library and pix2sky.py (pix2sky_mpi.py) for running code on computer cluster using MPI.
 
 
 - Following requirements should be met to run the code.
@@ -22,6 +22,8 @@ Thank you for downloading pix2sky code. It includes three different versions of 
  
     + parallel python module in case of pix2sky_pp.py. It can be downloaded
       from www.parallelpython.com.
+      
+    + mpi4py in case of pix2sky_mpi.py. It can downloaded from https://bitbucket.org/mpi4py.
 
 - Test data is included in data directory
 
@@ -38,9 +40,15 @@ Thank you for downloading pix2sky code. It includes three different versions of 
 
               $python pix2sky_pp.py in.fits in_xy.cat         
               $python pix2sky_pp.py in.fits in_xy.cat -d no
+
+    + MPI version:
+    
+                - Submit PBS job script (pbs_job) OR
+                - $mpiexec -np <ncpus> python pix2sky.py in.fit in_xy.cat 
     
 - For available command line options:
 
     + $python pix2sky_serial.py --help
     + $python pix2sky_multi.py --help
     + python pix2sky_pp.py --help   
+    + python pix2sky.py --help
