@@ -43,12 +43,16 @@ Thank you for downloading pix2sky code. It includes four different versions of t
 
     + MPI version:
     
-                - Submit PBS job script (pbs_job) OR
-                - $mpiexec -np <ncpus> python pix2sky.py in.fit in_xy.cat 
+            $mpiexec -np <ncpus> python pix2sky.py in.fit in_xy.cat
+            $mpiexec -np <ncpus> python pix2sky_pp.py in.fits in_xy.cat -d no
+            
+            where ncpus is number of processors.
+                
+            It can also be executed using pbs_job if pbs/torque/maui is installed on the cluster.    
     
 - For available command line options:
 
     + $python pix2sky_serial.py --help
     + $python pix2sky_multi.py --help
     + python pix2sky_pp.py --help   
-    + python pix2sky.py --help
+    + mpiexec -np <ncpus> python pix2sky.py --help
